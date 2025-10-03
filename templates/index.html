@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <!-- Início -->
+  <section class="inicio">
+    <div class="container">
+      <div class="texto-lado-esquerdo">
+        <div class="portfolio-label">PORTFÓLIO</div>
+        <h1>Eduarda Caetano</h1>
+        <p>Desenvolvedora Web</p>
+      </div>
+      <div class="foto-lado-direito">
+        <img src="{{ url_for('static', filename='images/fotoduda1.png') }}" alt="Minha Foto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section class="informacoes">
+    <div class="container-informacoes">
+      <h2>SOBRE MIM</h2>
+      <div class="conteudo-info">
+        <div class="linha-vertical"></div>
+        <p>
+          Tenho 18 anos e uma trajetória dedicada ao aprendizado e crescimento profissional. 
+          Comecei minha experiência no mercado de trabalho como estagiária em farmácia, onde desenvolvi 
+          habilidades importantes como responsabilidade, organização e atendimento ao cliente. 
+          Hoje, estou atuando como menor aprendiz enquanto curso técnico em Desenvolvimento de Sistemas, 
+          área pela qual sou apaixonada e na qual desejo crescer cada vez mais. 
+          Busco constantemente aprimorar meus conhecimentos e estou motivada para enfrentar novos desafios 
+          e contribuir de forma significativa em projetos tecnológicos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="habilidades-tecnicas">
+    <div class="container-habilidades">
+      <h2>HABILIDADES TÉCNICAS</h2>
+      <div class="lista-habilidades">
+        <div class="habilidade">
+          <h3>Front-end</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="habilidade">
+          <h3>Back-end</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Flask</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="habilidade">
+          <h3>Banco de Dados</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contato">
+    <div class="container-contato">
+      <div class="foto-contato">
+        <img src="{{ url_for('static', filename='images/perfil.png') }}" alt="Minha Foto" />
+      </div>
+      <div class="info-contato">
+        <h2>Onde me encontrar:</h2>
+        <p><strong>Contato:</strong> (27) 99649-4291</p>
+        <p><strong>Email:</strong> caetanoeduarda96@gmail.com</p>
+        <div class="icones-sociais">
+          <a href="https://www.linkedin.com/in/eduarda-caetano-b34a21380" target="_blank">
+            <img src="{{ url_for('static', filename='images/lik.jpg') }}" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/caetanoeduarda96-star" target="_blank">
+            <img src="{{ url_for('static', filename='images/githubbb.jpg') }}" alt="GitHub" />
+          </a>
+          <a href="https://wa.me/5527996494291" target="_blank">
+            <img src="{{ url_for('static', filename='images/certinho.jpg') }}" alt="WhatsApp" />
+          </a>
+          <a href="mailto:caetanoeduarda96@gmail.com">
+            <img src="{{ url_for('static', filename='images/email.png') }}" alt="Email" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
